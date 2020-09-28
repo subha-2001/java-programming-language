@@ -55,4 +55,33 @@ Enter any integer:
 5
 Factorial of 5is:120
 
-		
+USING CLASS
+
+import java.util.Scanner;
+class factorial
+{
+	static int factorial(int n)
+	{
+		if(n==0)
+		{
+			return 1;
+		}
+		else
+		{
+			return(n*factorial(n-1));
+		}
+	}
+	public static void main(String args[])
+	{
+		int n;
+		System.out.println("Enter any integer");
+		Scanner sc=new Scanner(System.in);
+		n=sc.nextInt();
+		System.out.println("Factorial of"+n+"is:"+factorial(n));
+	}
+}
+			
+Output
+Enter any integer
+6
+Factorial of6is: 720

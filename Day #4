@@ -1,4 +1,5 @@
 FACTORIAL OF A NUMBER
+with recursion:
 import java.util.Scanner;
 class factorial
 {
@@ -29,5 +30,29 @@ Enter a number:
 is
 Factorial of number 5
 120
+
+Without recursion
+
+import java.util.Scanner;
+public class factorial
+{
+	public static void main(String args[])
+	{
+		int n,fact=1;
+		System.out.println("Enter any integer:");
+		Scanner sc=new Scanner(System.in);
+		n=sc.nextInt();
+		for(int i=1;i<=n;i++)
+		{
+			fact=fact*i;
+		}
+			System.out.println("Factorial of "+n+"is:"+fact);
+		
+	}
+}
+OUTPUT:
+Enter any integer:
+5
+Factorial of 5is:120
 
 		

@@ -1,0 +1,33 @@
+FACTORIAL OF A NUMBER
+import java.util.Scanner;
+class factorial
+{
+	static int factorial(int n)
+	{
+		if(n==0)
+		{
+			return 1;
+			}
+		else
+		{
+			return(n*factorial(n-1));
+		}
+	}
+	public static void main(String args[])
+	{
+		int i,fact=1,number;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number:");
+		number=sc.nextInt();
+		fact=factorial(number);
+		System.out.println("Factorial of number "+number+"\t is :"+fact);
+	}
+}
+OUTPUT
+Enter a number:
+5
+is
+Factorial of number 5
+120
+
+		

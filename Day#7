@@ -1,0 +1,24 @@
+mport java.util.Scanner;
+class leap
+{
+	public static void main(String args[])
+	{
+		System.out.println("enter year");
+		int year=new Scanner(System.in).nextInt();
+		System.out.println("given year is leapyear true or false:"+leapyear(year));
+	}
+	public static boolean leapyear(int year)
+	{
+		if(year%400==0 && year%4==0 && year%100!=0)
+		{
+			 System.out.println("true");
+			 return true;
+		}
+		else
+		{
+			System.out.println("false");
+			return false;
+		}
+	}
+}
+	

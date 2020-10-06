@@ -1,0 +1,41 @@
+Decrypt
+import java.util.*;
+public class Main 
+{
+	static void println(String string)
+	{
+		System.out.println(string);
+	}
+	public static void main(String[] args)
+	{
+		System.out.println("Enter ascii code:");        Scanner sc=new Scanner(System.in);
+		int ascii;
+		ascii=sc.nextInt();
+		int temp=0;
+		String
+		for(int i=0;i<=ascii.length();i++)
+		{
+			if(ascii>127)
+			{
+				System.out.println("Please enter a valid input");
+				}
+				else
+				{
+					char m=(char)ascii;
+					char asciiChar=(char)temp;
+					//temp=temp*10+(ascii[i]);
+				}
+		}
+	}
+}
+	
+
+		
+		
+		
+		
+		
+			//char asciiChar=(char)ascii;
+			//System.out.println("Ascii value  "+ascii+"\tis"+asciiChar);
+		
+	

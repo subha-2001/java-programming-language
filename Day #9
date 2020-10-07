@@ -24,20 +24,30 @@ HELLO
 76
 76
 79
-import java.util.Scanner;
-public class Value
- {
- 	public static void main(String [] args) 
- 	{
- 		Scanner sc=new Scanner(System.in);
- 		System.out.println("enter text");
- 		String name =sc.nextLine();
- 		int nameLength=name.length();
- 		for (int i=0; i< nameLength;i++)
- 		{
- 			char character = name.charAt(i); 
- 			int ascii = (int) character; 
- 			System.out.println(ascii);
- 		}
- 	}
- }
+import java. util. Scanner;
+class Ascii
+{
+	static void ASCIISentence(String str)
+	{
+		int l=str.length();
+		int convert;
+		for (int i = 0; i <l;i++)
+		{
+			convert = str.charAt (i) ;
+		System.out.print(convert);
+		}
+	}
+		public static void main ( String args[])
+		{
+			System.out.println("enter a word");
+			Scanner sc=new Scanner(System.in);
+			String str=sc.next();
+			System.out. println( "ASCII Sentence");
+			ASCIISentence(str);
+		}
+}
+YOutput:
+Enter a word:
+HELLO
+Ascii sentence:
+7269767679

@@ -24,3 +24,20 @@ HELLO
 76
 76
 79
+import java.util.Scanner;
+public class Value
+ {
+ 	public static void main(String [] args) 
+ 	{
+ 		Scanner sc=new Scanner(System.in);
+ 		System.out.println("enter text");
+ 		String name =sc.nextLine();
+ 		int nameLength=name.length();
+ 		for (int i=0; i< nameLength;i++)
+ 		{
+ 			char character = name.charAt(i); 
+ 			int ascii = (int) character; 
+ 			System.out.println(ascii);
+ 		}
+ 	}
+ }

@@ -1,41 +1,33 @@
 Decrypt
-import java.util.*;
-public class Main 
+Code:
+import java.util.Scanner;
+class Ascii
 {
-	static void println(String string)
-	{
-		System.out.println(string);
-	}
-	public static void main(String[] args)
-	{
-		System.out.println("Enter ascii code:");        Scanner sc=new Scanner(System.in);
-		int ascii;
-		ascii=sc.nextInt();
-		int temp=0;
-		String
-		for(int i=0;i<=ascii.length();i++)
-		{
-			if(ascii>127)
-			{
-				System.out.println("Please enter a valid input");
-				}
-				else
-				{
-					char m=(char)ascii;
-					char asciiChar=(char)temp;
-					//temp=temp*10+(ascii[i]);
-				}
-		}
-	}
+    static void asciiToSentence ( String str,int len)
+    {
+        int num=0;
+        for (int i = 0; i<len; i++) 
+        {
+            num = num*10+(str.charAt(i)-'0'); 
+            if (num >= 32 && num <= 122)
+            {
+                char ch = (char)num; 
+                System. out.print(ch); 
+                num=0;
+            }
+        }
+    }
+    public static void main(String args[])
+    {
+            System.out.println("Enter ascii");
+            Scanner sc=new Scanner(System.in);
+            String str=sc.next();
+            int len = str.length();
+            asciiToSentence (str,len);
+    }
 }
-	
-
-		
-		
-		
-		
-		
-			//char asciiChar=(char)ascii;
-			//System.out.println("Ascii value  "+ascii+"\tis"+asciiChar);
-		
-	
+    
+OUTPUT:
+Enter ascii:
+7269767679
+HELLO

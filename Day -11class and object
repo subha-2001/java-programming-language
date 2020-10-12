@@ -1,0 +1,63 @@
+
+import java.util.Scanner;
+
+    class Employee
+    {
+        String Name;
+        int Age;
+        String city;
+        void GetData()           
+        {
+
+            Scanner sc = new Scanner(System.in);
+
+            System.out.print("\n\tEnter Employee Name : ");
+            Name = sc.nextLine();
+
+            System.out.print("\n\tEnter Employee Age : ");
+            Age = Integer.parseInt(sc.nextLine());
+
+            System.out.print("\n\tEnter Employee city : ");
+            city =sc.nextLine();
+
+        }
+
+        void PutData()   
+        {        
+
+            System.out.print("\n\tEmployee Name : "+Name);
+            System.out.print("\n\tEmployee Age : "+Age);
+            System.out.print("\n\tEmployee city "+city);
+
+        }
+
+        public static void main(String args[])
+        {
+
+            Employee E = new Employee();
+            E.GetData();          
+            E.PutData();   
+            Employee E1=new Employee();
+            E1.GetData();
+            E1.PutData();       
+
+        }
+    }
+Output:
+Enter Employee name:Subha
+
+Enter Employee Age : 18
+
+Enter Employee city : vellore
+
+ Employee name:Subha
+Employee Age : 18
+ Employee city : vellore
+
+Enter Employee Name : balaji
+Enter Employee Age 11
+Enter Employee city chennai
+
+Employee Name : balaji
+Employee Age 11
+Employee city chennai

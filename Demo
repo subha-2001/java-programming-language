@@ -17,7 +17,7 @@ public class CurrancyDEY {
    {
      return rupee/78;
    }
-   public double yenToEuro(double yen)
+   public double yenToRup(double yen)
    {
      return yen*0.6;
    }

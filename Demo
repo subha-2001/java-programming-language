@@ -29,7 +29,7 @@ public class CurrancyDEY {
 package packex;
 public class Distance
 {
-  public String kmtoMeter(double kilometer)
+  public String kmToMeter(double kilometer)
   {
     return kilometer*1000+"Meters";
   }

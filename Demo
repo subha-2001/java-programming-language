@@ -78,9 +78,9 @@ public class DEMOCDT
   {
     System.out.println("Enter the dollar:");
     dollar=obj.nextDouble();
-    System.out.println("Enter the euro");
+    System.out.println("Enter the euro:");
     euro=obj.nextDouble();
-    System.out.println("Enter the yen");
+    System.out.println("Enter the yen:");
     yen=obj.nextDouble();
     System.out.println("Enter the rupee:");
     rupee=obj.nextDouble();
@@ -110,7 +110,7 @@ public class DEMOCDT
    {
      System.out.println("Enter the hours");
      hours=obj.nextInt();
-     System.out.println("Enter the minites:");
+     System.out.println("Enter the minutes:");
      minutes=obj.nextInt();
      System.out.println("Enter the seconds:");
      seconds=obj.nextInt();

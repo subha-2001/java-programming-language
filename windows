@@ -1,0 +1,10 @@
+import java.awt.*;
+public class Demo
+{
+	public static void main(String args[])
+	{
+	Frame f=new Frame("Demo");
+	f.setSize(600,400);
+	f.setVisible(true);
+	}
+}
